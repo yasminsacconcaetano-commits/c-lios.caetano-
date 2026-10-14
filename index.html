@@ -50,8 +50,16 @@
    <p>Boas-vindas amigas! aqui irei fala um pouco sobre cílios,
       vou compartilhar dicas para o cuidado deles, valores, e falar
       também sobre cada modelo específico.</p>
-      <button>❤️​</button>
+      <button>❤️​ <span>0</span> </button>
   </div>
    </main>
  </body>
+ <script>
+   const botao = document.querySelector("button");
+   botao.addEventListener("click", botaoClicado);
+
+   function botaoClicado(){
+      console.log("fui clicado");
+   }
+ </script>
 </html>
