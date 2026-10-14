@@ -23,8 +23,15 @@
             color: #d0dbd2;
                  
         }
-        p{
-         font-weight: bold;
+      
+        img {
+         width: 80px;
+         height: 80px;
+
+        }
+
+        .artigo-autor {
+             font-weight: bold;
         }
 
   </style>
@@ -39,36 +46,12 @@
 
   
    <h2>Meu primeiro post</h2>
-   <p>escrito por: Yasmin Caetano</p>
+   <p class="artigo-autor"> escrito por: Yasmin Caetano</p>
    <p>Boas-vindas amigas! aqui irei fala um pouco sobre cílios,
       vou compartilhar dicas para o cuidado deles, valores, e falar
       também sobre cada modelo específico.</p>
+      <button>❤️​</button>
   </div>
    </main>
  </body>
 </html>
-main {
-display: flex;
-}
-<button>❤️<span>0</span></button>
-<script>
-
-</script>
-const botao = document.querySelector("button");
-botao.addEventListener("click", botaoClicado);
- function botaoClicado() {
-let texto = botao.querySelector("span");
-texto.textContent++;
-}
-<button>❤️<span>0</span></button>
-<button>��<span>0</span></button>
-const botoes = document.querySelectorAll("button");
-botoes.forEach(function(botao) {
-botao.addEventListener("click", botaoClicado);
-
-function botaoClicado() {
-console.log("fui clicado");
-let texto = botao.querySelector("span");
-texto.textContent++;
-}
-});
